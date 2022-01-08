@@ -399,5 +399,22 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://api.trackpush.com/sdk/native/v1.js?pid=bIbYW1Bqkkb%2Fqcvsg%2F%2BQrA%3D%3D&class=_643adf712b"></script>
+
+
+
+<script>
+(function() {
+    var script = document.createElement('script');
+    script.src = 'https://api.trackpush.com/sdk/inpage/v1.js?pid=bIbYW1Bqkkb%2Fqcvsg%2F%2BQrA%3D%3D';
+    script.async = true;
+    script.onload = function () {
+        InPagePushSDK.init({"content_type":"all","time_to_show":"onload","delay_show":0,"max_ads":3,"max_showing":2,"max_showing_mobile":1,"ads_interval":5,"closeable":"1","position":"top","mobile_position":"top","align":"right"});
+        
+    };
+    document.head.append(script);
+})();
+</script>
+
+
   </body>
 </html>
